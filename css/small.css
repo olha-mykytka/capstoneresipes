@@ -1,0 +1,105 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    background-image: url("../images/background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #33323f;
+    margin: 0;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.8);
+    color: #8b0000;
+    padding: 1.5rem;
+    border-bottom: 3px solid #e1c699;
+}
+
+header h1 {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #8b0000;
+}
+nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: center;
+    border-bottom: 3px solid #e1c699;
+}
+nav button {
+    color: #ffffff;
+    flex-basis: 48%;
+    margin: 0.5rem 1%;
+    padding: 1rem;
+    border: 2px solid #8b0000;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #e1c699, #8b0000);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+nav button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(0deg, #8b0000, #e1c699);
+}
+
+#viewer {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 11px;
+    border: 3px solid #e1c699;
+    background: rgba(255, 255, 255, 0.9);
+    max-width: 800px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+#viewer img {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+}
+#viewer h2 {
+    margin: 0;
+    padding: 0.5rem;
+    background: #8b0000;
+    color: white;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 1.8rem;
+}
+
+#viewer ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+    list-style-type: square;
+    color: #33323f;
+}
+#viewer ol {
+    padding: 20px;
+    padding-left: 2rem;
+}
+#viewer p {
+    padding: 0.5rem 1rem;
+    line-height: 1.6;
+}
+
+footer {
+    background: linear-gradient(0deg, #e1c699, #8b0000);
+    color: white;
+    padding: 1rem 2%;
+    text-align: center;
+    font-size: 1rem;
+}
